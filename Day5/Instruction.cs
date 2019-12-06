@@ -27,8 +27,7 @@ namespace Day5
 
             Size = 1 + list.Length;
             
-            Arguments = new List<Argument>(
-                list.ToList().Select(x => new Argument(x, (opcode /= 10) % 10 != 0)).ToList());
+            Arguments = list.ToList().Select(x => new Argument(x, (opcode /= 10) % 10 != 0)).ToList();
         }
     }
 }
